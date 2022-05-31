@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.listeserie" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Listeserie" >
+        <activity
+            android:name=".Main2Activity"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.Listeserie.NoActionBar" />
+        <activity
+            android:name=".activity.view_produit"
+            android:exported="false" />
+        <activity
+            android:name=".view_recette"
+            android:exported="false" />
+        <activity
+            android:name=".activity.View_ajout_produit"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
